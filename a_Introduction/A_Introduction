@@ -1,0 +1,76 @@
+
+#1 Features of Java
+
+:- java is always within top 5 language list
+:- In every 6 month minor update of java  released
+:- Easy to read 
+:-Maintainable
+:-Follow WORA concept 
+:-OOPs language
+:-multithreaded language
+:-has collection api 
+:-exception handling
+:-java is platform independent
+
+Java is an object-oriented language:-
+- Object-oriented means everything should be an object.
+- We always required a class to create an object.
+
+========================================================
+
+#2 JShell 
+
+- We have a concept of JShell that is introduced in Java 9 where you can create small codes and perform operations.
+- JShell can't be used for doing projects, it is only useful for experiments or learning concepts.
+
+==========================================================
+
+#3 How Java Works?
+
+- We required JVM to run a java code.
+- The job of the JVM is to execute the java code that you have created but it does not accept the code directly.
+- JVM does not accept the Java code as it only understands the Byte Code.
+- Java compiler also known as javac is used to convert java code into byte code.
+- The extension for the byte code is .class
+- Thus, the code written by the programmer is first converted into byte code by the compiler and then that byte code goes to the JVM for further execution.
+
+============================================================
+
+#4 Java is a platform-independent Language :
+
+It means you can run Java on any machine irrespective of any hardware or operating system.
+The one thing that the machine requires to run a java code is a JVM.
+- JVM is platform dependent and it needs to be built for a particular OS.
+
+=============================================================
+
+#5
+
+In Java, execution always starts from the main method:-
+- JVM starts execution only with one first file. If you need to run multiple files you need to tell it which one is the first file through which JVM can start execution.
+- The first file must contain the main method with its proper signature.
+- In Java, execution always starts from the main method.
+Signature of main method:
+
+ public static void main(String args[])
+
+==============================================================
+
+#6
+
+JRE:-
+- To run the Java application, you need extra libraries and need runtime. Runtime is something where you run things.
+- You use extra libraries, and you also need an environment. An additional layer is present above the OS known as JRE.
+- JVM is a part of JRE. JRE includes JVM and libraries.
+ JVM - Java Virutal Machine
+ JRE - Java Runtime Environment
+- For development purposes, you need to install JDK (Java Development Kit) which consists of JRE and JVM.
+- Java is WORA that is Write Once Run Anywhere provided that JVM and JDK installed.
+
+====================================================================
+
+#7
+
+- Whenever we build a project or an application what we are doing is we are processing the data. 
+- Data may come from the user and then we do processing on it. A database is used to store the data and processing done on it.
+- Database is permanent or persistent storage which means data will remain there if the machine gets shut down.

@@ -1,0 +1,208 @@
+
+#1
+-- conditional statement is a statement that can be true or false.
+-- suppose if ask student is pass. (answer yes or no)
+-- this type of statement of statement is conditional statement.
+
+=============================================================
+
+#2
+syntax of if-else
+
+-- condition is either true or false after evaluation 
+-- remember like c and c++, we cannot use number directly as condition of if-else
+- if(5) -- not allowed in java 
+-- you get Type mismatch: cannot convert from int to boolean
+
+=======================================================================
+
+public class hello {
+
+	public static void main(String[] args) {
+//		int x=8;
+//		System.out.println("Hello");
+//		System.out.println("Bye");
+		
+//		int x=18;
+//		if(x>10) {
+//			System.out.println("Hello");
+//		}
+		
+//		if(true) {
+//			System.out.println("Hello");
+//		}
+		
+//		int x=28;
+//		if(x>10 && x<=20) {       //11-20
+//			System.out.println("Hello");
+//		}
+//		System.out.println("Bye");
+		
+//		int x=28;
+//		if(x>10 && x<=20) {       //11-20
+//			System.out.println("Hello");
+//		}
+//		else
+//		System.out.println("Bye");
+		
+		int x=8;
+		int y=7;
+		if(x>y) {
+			System.out.println(x);
+			System.out.println("Thankyou");
+		}
+		else
+			System.out.println(y);		
+	}
+
+}
+
+==================================================================================
+
+#1
+-- if-else-if ladder is a series of if, else if or else statements that are executed based on the boolean condition.
+-- if else if ladder is used to test multiple conditions
+
+public class hello {
+
+	public static void main(String[] args) {
+//		int x=8;
+//		int y=7;
+//		int z=8;
+//		
+//		if(x>y && x>z)  //false
+//		{
+//			System.out.println(x);
+//		}
+//		else
+//			System.out.println(y);
+		
+//		int x=8;
+//		int y=7;
+//		int z=9;
+//		if(x>y && x>z)         //false
+//			System.out.println(x);
+//		else if(y>x && y>z)
+//			System.out.println(y);
+//		else
+//			System.out.println(z);
+		
+		
+		int x=8;
+		int y=7;
+		int z=9;
+		if(x>y && x>z)         //false
+			System.out.println(x);
+		else if(y>z)
+			System.out.println(y);
+		else
+			System.out.println(z);
+
+		
+	}
+
+}
+
+=========================================================================
+
+#1
+-- switch statement is a multiway branch statement that allows a variable to be tested for equality against a list of values
+each value is called a case, and the variable being switched on is checked for each switch case.
+
+#2
+if we have multiple test cases and we want to test for a particular value then we can use switch statement. 
+At the place switch we can also use if-else-if ladder.
+
+e.g
+suppose user enter a your date of birth and we want to check from multiple year then
+in this case we can use switch case.
+
+#3
+what dataType we can use in switch statement?
+-- the switch statement can have a number of possible execution paths. A switch works with the 
+byte, short, char, and int primitive data types. It also works with enumerated types (discussed in Enum Types), 
+the String class, and a few special classes that wrap certain primitive types: Character, Byte, Short, and Integer.
+
+public class hello {
+
+	public static void main(String[] args) {
+//		int n=1;
+//		if(n==1)
+//			System.out.println("Monday");
+//		else if(n==2)
+//			System.out.println("Tuesday");
+//		else if(n==3)
+//		System.out.println("Wednesday");
+//		else if(n==4)
+//		System.out.println("Thursday");
+//		else if(n==5)
+//		System.out.println("Friday");
+//		else if(n==6)
+//		System.out.println("Saturday");
+//		else
+//		System.out.println("Sunday");
+		
+		int n=8;
+		switch(n) {
+		case 1:
+			System.out.println("Monday");
+			break;
+		case 2:
+			System.out.println("Tuesday");
+			break;
+		case 3:
+		System.out.println("Wednesday");
+			break;
+		case 4:
+		System.out.println("Thursday");
+			break;
+		case 5:
+		System.out.println("Friday");
+			break;
+		case 6:
+		System.out.println("Saturday");
+			break;
+		case 7:
+		System.out.println("Sunday");
+			break;
+		default:
+			System.out.println("Enter a valid number");			
+		}
+		
+	}
+}
+
+
+=============================================================================================
+
+#1
+-- ternary operator is shorthand of if-else statement.
+
+#2
+ why we need ternary operator?
+  a) to reduce the code
+  b) to make the code more readable
+  c) to make the code more compact
+
+#3
+Syntax:
+variable = (condition)?value1 if condition is true :value2 if condition is false
+boolean result  =(5 less then 6)? true :false; //result false
+
+#4
+example:
+in if-else we can check a given number is even or odd now we code this problem by 
+ternary operator.
+
+int num=13;
+String str=(num%2==0)?"Even":"Odd";
+System.out.println(str); //output: Odd
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,197 @@
+
+#1
+Loops in Java is a feature used to execute a particular part of the program repeatedly if a given condition evaluates to be true.
+- We use loops, when we have to execute a same statement multiple times.
+- In Java, we have different types of loops:-
+1. while loop
+2. do while loop
+3. for loop 
+- Different type of loops have different kind of use- cases like a finite number of times or based on some condition.
+
+#2
+Need of loops in Java:-
+- It reduce the size of the code.
+- Loops make an easy flow of the control.
+- Loops reduce the time complexity and space complexity.
+
+public class hello {
+
+	public static void main(String[] args) {
+		//repeat this statement 4 times
+		//loop -while, do while, for
+		
+		//100 - condition
+		
+		System.out.println("Hi");
+			
+	}
+}
+
+===========================================================================
+
+#1
+While loop:-
+- While loop is used with a condition. We need to provide a condition inside the while loop.
+- If we will give the condition as true inside the while loop then it will infinite times.
+-If we do not provide any condition inside the while loop then it is known as an empty loop.
+- We require an iterator inside the loop to execute the statements.
+-- We use plus opertaor(+) for concatenation. When we have to concatenate or join two things, we simply use plus operator.
+- We need to put the condition inside the while loop for executing statements. We run the loop until the condition gets false.
+- When the condition inside the while loops get false, then after that it will not execute the statement of the block and the iterator directly jumps out of the block.
+
+- The while loop is used when the number of iterations is unknown but the terminating condition is known.
+-  While loop is also an entry-controlled loop as the condition is checked before entering the loop. The test condition is checked first and then the control goes inside the loop.
+
+Syntax of while loop:-
+ while(condition)
+ {
+  statements;
+ }
+
+#2
+Nested loops:-
+- We can also use a loop inside another loop statement. A loop inside another loop is known as a nested loop.
+- There can be any number of inner loops inside an outer loop.
+
+public class hello {
+
+	public static void main(String[] args) {
+		int i=1;
+		
+//		while(true)
+//		{
+//			System.out.println("Hi"+ i);
+//			i++;
+//		}
+		
+		
+//		while(i<=4)
+//		{
+//			System.out.println("Hi"+ i);
+//			i++;
+//		}
+//		System.out.println("Bye"+i);
+
+		
+		while(i<=4)
+		{
+			System.out.println("Hi"+ i);
+			int j=1;
+			while(j<=3) {
+				System.out.println("Hello"+j);
+				j++;
+			}
+			i++;
+		}
+		System.out.println("Bye"+i);
+	}
+}
+
+
+=========================================================================
+
+Do- While Loop:-
+When you have to execute the block at least once even if the condition is false, then in such cases we use do- while loop.
+- Do- while is almost similar to while loop except thst the condition is checked after evaluation after body of the loop.
+- Do-while runs at least once and at most as many times the test condition evaluates to true.
+- Consition is cjeckd at the end of the execution of the body in this loop.
+- It is also known as exit- controlled loop.
+- It is the only loop that has a semicolon(;)
+
+public class hello {
+
+	public static void main(String[] args) {
+		int i=1;
+		do
+		{
+			System.out.println("Hi"+i);
+			i++;
+		}
+		while(i<=4);
+	}
+}
+
+
+==================================================================================
+
+
+#1
+-In the while loop we have three things: Initialization, Condition, and then increment.
+-We do these three things in different lines in a while loop.
+-Sometimes we do not know about the ending point, where this loop will get end. As it may end based on some conditions.
+
+#2
+- In the finite loop, we know about its starting and ending.
+- For loop supports three different statements in one line.
+- We can put initialization, condition and increment in one single line in for loop.
+- It is mostly used when the number of iterations is fixed.
+- Because of the binary format computer starts from 0.
+- So, in general, we start from 0 and end at count-1 ie., one less than the total number of iterations.
+- Loops are very useful when we have to print some pattern or want to print things repeatedly.
+
+#3
+Syntax of For Loop:-
+ for(initiation; condition; incrementation or decrementation)
+ {
+  statements;
+ }
+
+* init - The init expression is used for initializing a variable, and it is executed only once.
+* condition - It executes the condition statement for every iteration. If it evaluates the condition to be true, it executes the body of the loop. The loop will continue to run until the condition becomes false.
+* incr/ decr - It is the increment or decrement statement applied to the variable to update the initial expression.
+
+- First initiation and condition statement execute and then execution of statements takes place and then increment takes place at last.
+- We can also skip any of the three parts as per the need.
+
+#4
+Nested For loops:-
+- We can also use nested for loops as same as while loop. Nested loops mean loop inside a loop.
+- Whenever the outer loop meets the condition, the inner loop is executed completely.
+
+
+public class hello {
+
+	public static void main(String[] args) {
+		for(int i=0;i<=4;i++)
+		{
+			System.out.println("Hi"+i);
+		}
+		
+		
+		for(int i=1;i<=7;i++)
+		{
+			System.out.println("Day"+i);
+			for(int j=1;j<=9;j++)
+			{
+				System.out.println(" "+(j+8)+"-"+(j+9));
+			}
+		}
+		
+		
+		int i=1;
+		for(;i<=5;)
+		{
+			System.out.println("DAY"+i);
+			i++;
+		}
+	}
+}
+
+
+=============================================================================================
+
+For loop:-
+If you know how many iterations you want to go for loop
+(intiliazing vaue, condition, increment or decrement)
+
+While loop:-
+When you need to read the file go for while loop, if the number of iterations is not known.
+
+- For loop can also be used as a while.
+ 
+Do While Loop:-
+If you condition get false but you want to exceute the code at least once.
+
+
+
+
