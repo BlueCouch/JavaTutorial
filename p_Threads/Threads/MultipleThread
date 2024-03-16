@@ -1,0 +1,55 @@
+
+class A extends Thread {
+    public void /*show*/run() {
+        for(int i=1; i<=10; i++) {
+            System.out.println("HI");
+        }
+    }
+}
+
+class B extends Thread{
+    public void /*show*/run() {
+        for(int i=1; i<=6; i++) {
+            System.out.println("HELLO");
+        }
+    }
+}
+
+
+public class Demo {
+    public static void main (String[] a) {
+
+        A obj1 = new A();
+        B obj2 = new B();
+
+        // obj1.show();
+        obj1.start();
+        obj2.show();
+
+    }
+}
+
+Your execution(JVM) will start from main. 
+The executor says, okay, my job is to execute this show method, right?
+So the executable will directly jump to this method, which is show()
+Okay, now it will start executing this method
+But when you are executing this method, thhere is a hold on demo, right?
+Main will continue for the next statement only when the previous statement is done executing.
+
+
+So, if you want to execute two things at the same time or two behave at the same time.
+Since methods are behaviours, we can use something called 'threads'.
+I want to execute these two objectsm but then they are not normla objects.
+You cant execute normal objects in multiple thereads or you cant execute normal object execution simultaneously.
+So you have to use multiple threads here.
+So how do you make your normal objects as threads ?
+
+If you want to make this classes or this objects as threads just extend with a class called thread.
+
+I want to execute it parallely
+
+In every thread you need to have a run method.
+
+BTS there is a concept of "thread"
+
+If i have 4 core, i will have 4 thread at the same time.

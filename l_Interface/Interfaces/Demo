@@ -1,0 +1,63 @@
+
+class - class -> extends
+class - interface -> implements
+interface - interface -> extends
+
+interface A {
+
+    int age = 44; // Final and Static by default
+
+    void show();
+    void config();
+}
+
+interface X {
+    void run();
+}
+
+interface Y extends X {
+    
+}
+
+class B implements A {
+
+    @Override
+    public void show() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'show'");
+    }
+
+    @Override
+    public void config() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'config'");
+    }
+
+}
+
+
+public class Demo {
+    public static void main(String[] a) {      
+        
+        A obj;
+        obj = new B();
+        obj.show();
+        obj.config();
+        
+        System.out.println(A.age);
+
+    }
+}
+
+Let us say if I have a class with only abstract methods,
+We have another way of doing it
+
+Interface is not a class. Every method is by default "public abstract"
+
+Interface gives you design to create class
+
+You want to create a concrete class of B as you want to instatiate an object of B, Thus if you fail to define the methods of interface it will automatically categorise it as abstract class.
+
+You can have one class running multiple Interfaces.
+
+An interface can be extended.

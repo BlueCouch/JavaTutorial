@@ -1,0 +1,4 @@
+Exception is a superclass.
+
+So on top we have object class. Because every class in jaa extends object.
+

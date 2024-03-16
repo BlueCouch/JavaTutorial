@@ -1,0 +1,16 @@
+What are the diffrent states availiable ?
+
+New : When a new thread is created
+    The moment when you say start it goes into runnable state.
+
+Runnable 
+When your thread is executing and waiting for the scheduler
+
+Running 
+When your thread is actually running on CPU
+sleep(), wait()
+
+Waiting 
+You can comback by notify(). You will go back into Runnable.
+
+Dead

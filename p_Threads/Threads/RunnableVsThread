@@ -1,0 +1,70 @@
+
+/*
+class A implements Runnable {
+    public void /*show*//*run() {
+        for(int i=1; i<=100; i++) {
+            System.out.println("HI");
+            try {
+                Thread.sleep(10); //wait\
+            } 
+            catch (InterruptedEception e ) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+*/
+
+
+class B implements Runnable {
+    public void /*show*/run() {
+        for(int i=1; i<=6; i++) {
+            System.out.println("HELLO");
+            try {
+                Thread.sleep(10);
+            } 
+            catch (InterruptedEception e ) {
+                e.printStackTrace();
+            }
+        }
+    }
+}
+
+
+public class Demo {
+    public static void main (String[] a) {
+
+
+        Runnable obj1 = () -> {
+            
+                for(int i=1; i<=100; i++) {
+                    System.out.println("HI");
+                    try {
+                        Thread.sleep(10); //wait\
+                    } 
+                    catch (InterruptedEception e ) {
+                        e.printStackTrace();
+                    }
+                }
+            };
+        
+
+
+        // We can create a Reference of an Interface, an object of a class
+        Runnable obj2 = new B();
+
+
+        Thread t1 = new Thread(obj1);
+        Thread t2 = new Thread(obj2);
+        
+
+        // obj1.show();
+        t1.start();   //start will not work because start method was coming from the Thread class
+        t2.show();
+
+    }
+}
+
+What is class A wants to extend another class, But multiple inheritance is not possible in Java :(
+
+Going through thte source files of the interface Runnable we find that there is an abstract method called run() *-*.

@@ -1,0 +1,44 @@
+
+interface Computer {
+    public abstract void code();
+}
+
+class Laptop implements Computer {
+    public void code() {
+        System.out.println("code, compile, run");
+    }
+}
+
+class Desktop implements Computer {
+    public void code() {
+        System.out.println("code, compile, run : Faster");
+    }
+}
+
+class Developer {
+    public void devApp(Laptop lap) {
+        
+        We are passing a object of Laptop but I want the developer to work with Desktop object 
+        Thus it is not possible to pass both objects at a same time, Thus we say 
+        Developer is depended on COMPUTER.
+
+        lap.code();
+    }
+}
+
+
+public class needForInterface {
+    public static void main(String[] args) {
+       
+        Laptop lap = new Laptop();
+        Desktop desk = new Desktop();
+        
+        Developer ninja = new Developer();
+        ninja.devApp(lap);
+        
+    }
+}
+
+We create a common class for Laptop and Desktop called COMPUTER
+We extend the Computer class.
+Instead of making Computer an abstract class we can make it Interface as the method inside it are going to be abstract.

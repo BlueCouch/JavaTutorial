@@ -1,0 +1,15 @@
+
+In the interface we can declare methods abstract and variable final
+
+Normal : If we have two or more methods
+
+Functional / SAM : Single Abstract method : Only one method 
+
+Marker : Blank interface , to update something to the compiler
+
+Suppose in a game
+
+Serialization : You store the game current stats into harddrive.
+
+You restarted the game thus you load your current stats.
+Deserialization : You can take the object and store the value of the object in the harddrive.

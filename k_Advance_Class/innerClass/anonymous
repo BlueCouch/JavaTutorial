@@ -1,0 +1,33 @@
+
+class A {
+    public void show() {
+        System.out.println("In A Show")
+    }
+}
+
+/*
+
+class B extends A {
+    public void show() {
+        System.out.println("In B Show")
+    }
+}
+
+*/
+
+
+public class anonymous {
+    public static void main(String[] ar) {
+
+        A obj = new A() {
+            System.out.println("In new Show")
+        };
+        // Inner class since we don't have a name It is called Anonymous class
+
+        obj.show();
+
+    }
+}
+
+
+The only purpose of this class B was to extend or to extend a class to override the method, and maybe it will beused only once.

@@ -1,0 +1,37 @@
+
+class A {
+    int age;
+
+    public void show() {
+        System.out.println("In config");
+    }
+
+    class B {
+        public void config() {
+            System.out.println("In config");
+        }
+    }
+    
+}
+
+
+
+
+public class Demo {
+    public static void main(String[] arhgs) {
+        A obj = new A();
+        obj.show();
+
+        A.B obj1 = obj.new B();
+        obj.config();
+
+    }
+}
+
+If you have a class, and it is totally dependent on class A There is no other need for it, In that case you can create an Inner class.
+
+If you want to create an object of Inner class then first you need to create an object of class A
+
+You cannot make outer class static
+If you decide to make your inner class static then you can directly create a object.
+// new A.B()
